@@ -1,0 +1,21 @@
+name: Idea or request
+description: Suggest something that would help a child, parent or teacher
+labels: [enhancement]
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What would help?
+      description: Describe the situation and who it's for (child, parent, teacher, therapist).
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How could Daysteps help?
+  - type: checkboxes
+    id: calm
+    attributes:
+      label: Child view
+      options:
+        - label: This would add something to the child's screen (we keep it as simple as possible)

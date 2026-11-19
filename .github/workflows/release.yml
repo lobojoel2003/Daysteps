@@ -1,0 +1,294 @@
+name: Release
+
+# Push a tag like v1.2.3 (matching `version:` in pubspec.yaml) to publish a
+# GitHub Release with Android APKs, an App Bundle and the web app, and to
+# deploy the web app to GitHub Pages.
+on:
+  push:
+    tags: ['v[0-9]+.[0-9]+.[0-9]+*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing tag to build and publish, e.g. v1.0.0
+        required: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ inputs.tag || github.ref_name }}
+  cancel-in-progress: false
+
+env:
+  FLUTTER_VERSION: '3.50.0'
+  TAG: ${{ inputs.tag || github.ref_name }}
+
+jobs:
+  prepare:
+    name: Check version
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      build: ${{ steps.version.outputs.build }}
+      prerelease: ${{ steps.version.outputs.prerelease }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ env.TAG }}
+
+      - name: Tag must match pubspec.yaml
+        id: version
+        run: |
+          pubspec=$(sed -n 's/^version: *//p' pubspec.yaml | tr -d '[:space:]')
+          name=${pubspec%%+*}
+          build=${pubspec##*+}
+          if [ "v$name" != "$TAG" ]; then
+            echo "::error::Tag $TAG does not match pubspec.yaml version $pubspec (expected v$name)."
+            exit 1
+          fi
+          prerelease=false
+          case "$name" in *-*) prerelease=true ;; esac
+          echo "version=$name" >> "$GITHUB_OUTPUT"
+          echo "build=$build" >> "$GITHUB_OUTPUT"
+          echo "prerelease=$prerelease" >> "$GITHUB_OUTPUT"
+          echo "Releasing $name (build $build, prerelease: $prerelease)"
+
+      - name: Release notes from CHANGELOG.md
+        run: |
+          version='${{ steps.version.outputs.version }}'
+          awk -v v="$version" '
+            $0 ~ "^## \\[" v "\\]" { found = 1; next }
+            found && /^## \[/ { exit }
+            found { print }
+          ' CHANGELOG.md > notes.md
+          if [ ! -s notes.md ]; then
+            echo "::error::CHANGELOG.md has no section for [$version]."
+            exit 1
+          fi
+          cat notes.md
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: notes
+          path: notes.md
+
+  test:
+    name: Analyze & test
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ env.TAG }}
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq libsqlite3-dev
+      - run: flutter pub get
+      - run: flutter analyze --fatal-infos
+      - run: flutter test
+
+  android:
+    name: Android APKs & App Bundle
+    needs: [prepare, test]
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      VERSION: ${{ needs.prepare.outputs.version }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ env.TAG }}
+
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: gradle
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+
+      - name: Release signing key
+        env:
+          KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          if [ -z "$KEYSTORE_BASE64" ]; then
+            echo "::warning::No ANDROID_KEYSTORE_BASE64 secret: APKs are signed with a temporary debug key."
+            echo "SIGNED=false" >> "$GITHUB_ENV"
+            exit 0
+          fi
+          echo "$KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/release.jks"
+          {
+            echo "DAYSTEPS_KEYSTORE_PATH=$RUNNER_TEMP/release.jks"
+            echo "DAYSTEPS_KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD"
+            echo "DAYSTEPS_KEY_ALIAS=$KEY_ALIAS"
+            echo "DAYSTEPS_KEY_PASSWORD=$KEY_PASSWORD"
+            echo "SIGNED=true"
+          } >> "$GITHUB_ENV"
+
+      - name: Build
+        run: |
+          flutter build apk --release
+          flutter build apk --release --split-per-abi
+          flutter build appbundle --release
+
+      - name: Collect files
+        run: |
+          mkdir -p dist
+          apk=build/app/outputs/flutter-apk
+          cp "$apk/app-release.apk"             "dist/daysteps-$VERSION-android.apk"
+          cp "$apk/app-arm64-v8a-release.apk"   "dist/daysteps-$VERSION-android-arm64-v8a.apk"
+          cp "$apk/app-armeabi-v7a-release.apk" "dist/daysteps-$VERSION-android-armeabi-v7a.apk"
+          cp "$apk/app-x86_64-release.apk"      "dist/daysteps-$VERSION-android-x86_64.apk"
+          if [ "$SIGNED" = "true" ]; then
+            cp build/app/outputs/bundle/release/app-release.aab "dist/daysteps-$VERSION-android.aab"
+          fi
+          echo "$SIGNED" > dist/.signed
+          ls -la dist
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: android
+          path: dist
+          include-hidden-files: true
+
+  web:
+    name: Web app
+    needs: [prepare, test]
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      VERSION: ${{ needs.prepare.outputs.version }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ env.TAG }}
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+
+      - name: Build for GitHub Pages
+        run: |
+          flutter build web --release --no-web-resources-cdn --web-content-hash --base-href /Daysteps/
+          python3 tool/web/finalize_build.py build/web
+          cp -r build/web site
+
+      - name: Build for any web server (served from /)
+        run: |
+          flutter build web --release --no-web-resources-cdn --web-content-hash --base-href /
+          python3 tool/web/finalize_build.py build/web
+          mkdir -p dist
+          (cd build/web && zip -qr "../../dist/daysteps-$VERSION-web.zip" .)
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: web-zip
+          path: dist
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: web-site
+          path: site
+
+  publish:
+    name: Publish GitHub Release
+    needs: [prepare, android, web]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      VERSION: ${{ needs.prepare.outputs.version }}
+      BUILD: ${{ needs.prepare.outputs.build }}
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          path: artifacts
+
+      - name: Assemble files and notes
+        run: |
+          mkdir -p release
+          cp artifacts/android/*.apk release/
+          cp artifacts/android/*.aab release/ 2>/dev/null || true
+          cp artifacts/web-zip/*.zip release/
+          (cd release && sha256sum * > SHA256SUMS.txt)
+          signed=$(cat artifacts/android/.signed)
+          {
+            cat artifacts/notes/notes.md
+            echo
+            echo "## Downloads"
+            echo
+            echo "| File | For |"
+            echo "|---|---|"
+            echo "| \`daysteps-$VERSION-android.apk\` | Any Android 7.0+ phone or tablet (works everywhere) |"
+            echo "| \`daysteps-$VERSION-android-arm64-v8a.apk\` | Smaller download for most devices from the last ~8 years |"
+            echo "| \`daysteps-$VERSION-android-armeabi-v7a.apk\` | Smaller download for older or budget 32-bit devices |"
+            echo "| \`daysteps-$VERSION-android-x86_64.apk\` | Emulators and Chromebooks |"
+            if [ "$signed" = "true" ]; then
+              echo "| \`daysteps-$VERSION-android.aab\` | Google Play upload |"
+            fi
+            echo "| \`daysteps-$VERSION-web.zip\` | Self-host the web app on any static web server |"
+            echo
+            echo "Or use it in the browser: https://lobojoel2003.github.io/Daysteps/"
+            echo
+            echo "Version $VERSION, build $BUILD. Check downloads against \`SHA256SUMS.txt\`."
+            if [ "$signed" != "true" ]; then
+              echo
+              echo "> [!NOTE]"
+              echo "> These APKs are signed with a temporary debug key, fine for trying the app."
+              echo "> Installing a later version over this one may need an uninstall first;"
+              echo "> back up your boards (Settings → Back up all boards) before you do."
+            fi
+          } > release-notes.md
+          ls -la release
+          cat release-notes.md
+
+      - name: Create release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ env.TAG }}
+          name: Daysteps ${{ env.VERSION }}
+          body_path: release-notes.md
+          prerelease: ${{ needs.prepare.outputs.prerelease == 'true' }}
+          make_latest: ${{ needs.prepare.outputs.prerelease != 'true' }}
+          files: release/*
+          fail_on_unmatched_files: true
+
+  pages:
+    name: Deploy web app to GitHub Pages
+    needs: [prepare, publish]
+    if: needs.prepare.outputs.prerelease != 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v8
+        with:
+          name: web-site
+          path: site
+
+      - name: Push to the gh-pages branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd site
+          touch .nojekyll
+          git init -q -b gh-pages
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Deploy Daysteps $TAG"
+          git push -f -q "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
+          echo "Deployed to https://${GITHUB_REPOSITORY_OWNER}.github.io/${GITHUB_REPOSITORY#*/}/" >> "$GITHUB_STEP_SUMMARY"
