@@ -79,6 +79,7 @@ jobs:
           awk -v v="$version" '
             $0 ~ "^## \\[" v "\\]" { found = 1; next }
             found && /^## \[/ { exit }
+            found && /^\[[^]]+\]: / { next }   # link definitions
             found { print }
           ' CHANGELOG.md > notes.md
           if [ ! -s notes.md ]; then
@@ -253,9 +254,9 @@ jobs:
             echo
             echo "| File | For |"
             echo "|---|---|"
-            echo "| \`daysteps-$VERSION-android.apk\` | Any Android 7.0+ phone or tablet (works everywhere) |"
-            echo "| \`daysteps-$VERSION-android-arm64-v8a.apk\` | Smaller download for most devices from the last ~8 years |"
-            echo "| \`daysteps-$VERSION-android-armeabi-v7a.apk\` | Smaller download for older or budget 32-bit devices |"
+            echo "| \`daysteps-$VERSION-android-arm64-v8a.apk\` | **Most Android phones and tablets** (64-bit, roughly 2017 and newer) |"
+            echo "| \`daysteps-$VERSION-android-armeabi-v7a.apk\` | Older or budget 32-bit devices |"
+            echo "| \`daysteps-$VERSION-android.apk\` | Not sure? This one works on every Android 7.0+ device (larger download) |"
             echo "| \`daysteps-$VERSION-android-x86_64.apk\` | Emulators and Chromebooks |"
             if [ "$signed" = "true" ]; then
               echo "| \`daysteps-$VERSION-android.aab\` | Google Play upload |"

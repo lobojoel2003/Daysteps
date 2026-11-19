@@ -173,9 +173,9 @@ dependable.
 ### Android (7.0 and newer)
 
 1. Open the [latest release][latest] and download
-   **`daysteps-<version>-android.apk`** (it works on every device; the
-   `arm64-v8a` and `armeabi-v7a` files are smaller downloads for modern and
-   older devices).
+   **`daysteps-<version>-android-arm64-v8a.apk`**, which suits most phones and
+   tablets. For older 32-bit devices pick `armeabi-v7a`; if you're not sure,
+   `daysteps-<version>-android.apk` works on every device but is larger.
 2. Open the file and allow installing from your browser or file manager when
    Android asks.
 3. Optional, for a child's tablet: in Daysteps turn on **Settings → Open

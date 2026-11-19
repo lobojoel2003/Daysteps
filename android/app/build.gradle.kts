@@ -61,6 +61,15 @@ android {
         }
     }
 
+    // Compress native libraries inside the APK. Android 7+ would otherwise
+    // store them uncompressed, roughly doubling the download for families
+    // who install the APK directly on an inexpensive tablet.
+    packaging {
+        jniLibs {
+            useLegacyPackaging = true
+        }
+    }
+
     // Reproducible, F-Droid friendly builds: no dependency metadata blob.
     dependenciesInfo {
         includeInApk = false

@@ -9,6 +9,14 @@ is the number after `+` in `pubspec.yaml` and goes up with every release.
 
 ## [Unreleased]
 
+## [1.0.1] - 2026-11-19
+
+### Changed
+
+- Smaller Android downloads: native libraries are now compressed inside the
+  APKs.
+- Release notes recommend the APK that suits most devices first.
+
 ## [1.0.0] - 2026-11-19
 
 The first release: picture schedules, first–then boards and visual timers that
@@ -46,5 +54,6 @@ work offline on Android and in the browser.
 - **Offline web app** that can be installed from the browser.
 - No account, no ads, no tracking.
 
-[Unreleased]: https://github.com/lobojoel2003/Daysteps/compare/v1.0.0...HEAD
+[Unreleased]: https://github.com/lobojoel2003/Daysteps/compare/v1.0.1...HEAD
+[1.0.1]: https://github.com/lobojoel2003/Daysteps/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/lobojoel2003/Daysteps/releases/tag/v1.0.0

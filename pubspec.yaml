@@ -12,8 +12,7 @@ issue_tracker: https://github.com/lobojoel2003/Daysteps/issues
 #   the release tag (v1.2.3 -> 1.2.3).
 # - The build number (after "+") is the Android versionCode. It must increase
 #   with every release. Use `tool/bump_version.sh` to change both.
-version: 1.0.0+1
-
+version: 1.0.1+2
 environment:
   sdk: ^3.14.0
   flutter: '>=3.50.0'
