@@ -1,0 +1,2492 @@
+{
+  "version": 1,
+  "sets": {
+    "mulberry": {
+      "name": "Mulberry Symbols",
+      "author": "Steve Lee",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "url": "https://mulberrysymbols.org"
+    },
+    "openmoji": {
+      "name": "OpenMoji",
+      "author": "Benedikt Groß, Daniel Utz and the OpenMoji contributors (HfG Schwäbisch Gmünd)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "url": "https://openmoji.org"
+    }
+  },
+  "categories": [
+    {
+      "id": "routine",
+      "label": "Morning & night",
+      "cover": "mulberry/wake_up"
+    },
+    {
+      "id": "hygiene",
+      "label": "Bathroom",
+      "cover": "mulberry/brush_teeth"
+    },
+    {
+      "id": "food",
+      "label": "Food & drink",
+      "cover": "mulberry/apple"
+    },
+    {
+      "id": "school",
+      "label": "School",
+      "cover": "mulberry/school"
+    },
+    {
+      "id": "play",
+      "label": "Play",
+      "cover": "mulberry/ball"
+    },
+    {
+      "id": "places",
+      "label": "Places & travel",
+      "cover": "mulberry/home"
+    },
+    {
+      "id": "people",
+      "label": "People",
+      "cover": "mulberry/family"
+    },
+    {
+      "id": "feelings",
+      "label": "Feelings",
+      "cover": "openmoji/happy"
+    },
+    {
+      "id": "helpers",
+      "label": "Now & next",
+      "cover": "mulberry/timer"
+    }
+  ],
+  "symbols": [
+    {
+      "id": "openmoji/morning",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/morning.svg",
+      "label": "Morning",
+      "category": "routine",
+      "keywords": [
+        "morning",
+        "sunrise",
+        "sun",
+        "day"
+      ],
+      "source": "1F305"
+    },
+    {
+      "id": "openmoji/alarm_clock",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/alarm_clock.svg",
+      "label": "Alarm clock",
+      "category": "routine",
+      "keywords": [
+        "alarm",
+        "clock",
+        "wake",
+        "morning"
+      ],
+      "source": "23F0"
+    },
+    {
+      "id": "mulberry/wake_up",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/wake_up.svg",
+      "label": "Wake up",
+      "category": "routine",
+      "keywords": [
+        "wake",
+        "awake",
+        "morning",
+        "bed"
+      ],
+      "source": "wake_up_,_to"
+    },
+    {
+      "id": "mulberry/get_up",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/get_up.svg",
+      "label": "Get up",
+      "category": "routine",
+      "keywords": [
+        "get",
+        "up",
+        "rise",
+        "morning"
+      ],
+      "source": "get_up_,_to"
+    },
+    {
+      "id": "mulberry/make_bed",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/make_bed.svg",
+      "label": "Make the bed",
+      "category": "routine",
+      "keywords": [
+        "bed",
+        "make",
+        "tidy",
+        "bedroom"
+      ],
+      "source": "make_the_bed_,_to"
+    },
+    {
+      "id": "mulberry/get_dressed",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/get_dressed.svg",
+      "label": "Get dressed",
+      "category": "routine",
+      "keywords": [
+        "dressed",
+        "clothes",
+        "dress",
+        "shirt",
+        "change"
+      ],
+      "source": "change_clothes_,_to"
+    },
+    {
+      "id": "mulberry/socks",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/socks.svg",
+      "label": "Socks",
+      "category": "routine",
+      "keywords": [
+        "socks",
+        "feet",
+        "clothes",
+        "dressed"
+      ],
+      "source": "socks"
+    },
+    {
+      "id": "mulberry/shoes",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/shoes.svg",
+      "label": "Shoes",
+      "category": "routine",
+      "keywords": [
+        "shoes",
+        "trainers",
+        "sneakers",
+        "feet"
+      ],
+      "source": "trainers"
+    },
+    {
+      "id": "mulberry/coat",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/coat.svg",
+      "label": "Coat",
+      "category": "routine",
+      "keywords": [
+        "coat",
+        "jacket",
+        "outside",
+        "cold"
+      ],
+      "source": "coat"
+    },
+    {
+      "id": "openmoji/nap",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/nap.svg",
+      "label": "Nap",
+      "category": "routine",
+      "keywords": [
+        "nap",
+        "rest",
+        "sleep",
+        "bed"
+      ],
+      "source": "1F6CC"
+    },
+    {
+      "id": "mulberry/night",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/night.svg",
+      "label": "Night",
+      "category": "routine",
+      "keywords": [
+        "night",
+        "moon",
+        "stars",
+        "evening",
+        "dark"
+      ],
+      "source": "night"
+    },
+    {
+      "id": "mulberry/pyjamas",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/pyjamas.svg",
+      "label": "Pyjamas",
+      "category": "routine",
+      "keywords": [
+        "pyjamas",
+        "pajamas",
+        "pjs",
+        "bedtime"
+      ],
+      "source": "pyjamas"
+    },
+    {
+      "id": "mulberry/bedtime_story",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/bedtime_story.svg",
+      "label": "Bedtime story",
+      "category": "routine",
+      "keywords": [
+        "story",
+        "book",
+        "read",
+        "bedtime"
+      ],
+      "source": "read_2_,_to"
+    },
+    {
+      "id": "mulberry/go_to_bed",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/go_to_bed.svg",
+      "label": "Go to bed",
+      "category": "routine",
+      "keywords": [
+        "bed",
+        "bedtime",
+        "night",
+        "sleep"
+      ],
+      "source": "bed_time"
+    },
+    {
+      "id": "mulberry/sleep",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/sleep.svg",
+      "label": "Sleep",
+      "category": "routine",
+      "keywords": [
+        "sleep",
+        "bed",
+        "night",
+        "rest"
+      ],
+      "source": "sleep_female_,_to"
+    },
+    {
+      "id": "mulberry/toilet",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/toilet.svg",
+      "label": "Toilet",
+      "category": "hygiene",
+      "keywords": [
+        "toilet",
+        "potty",
+        "wee",
+        "poo",
+        "loo"
+      ],
+      "source": "toilet"
+    },
+    {
+      "id": "mulberry/flush",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/flush.svg",
+      "label": "Flush",
+      "category": "hygiene",
+      "keywords": [
+        "flush",
+        "toilet",
+        "loo"
+      ],
+      "source": "flush_toilet_,_to"
+    },
+    {
+      "id": "mulberry/wash_hands",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/wash_hands.svg",
+      "label": "Wash hands",
+      "category": "hygiene",
+      "keywords": [
+        "wash",
+        "hands",
+        "soap",
+        "clean"
+      ],
+      "source": "wash_hands_,_to"
+    },
+    {
+      "id": "mulberry/dry_hands",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/dry_hands.svg",
+      "label": "Dry hands",
+      "category": "hygiene",
+      "keywords": [
+        "dry",
+        "hands",
+        "towel"
+      ],
+      "source": "dry_hands_,_to"
+    },
+    {
+      "id": "mulberry/soap",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/soap.svg",
+      "label": "Soap",
+      "category": "hygiene",
+      "keywords": [
+        "soap",
+        "wash",
+        "clean"
+      ],
+      "source": "soap"
+    },
+    {
+      "id": "mulberry/towel",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/towel.svg",
+      "label": "Towel",
+      "category": "hygiene",
+      "keywords": [
+        "towel",
+        "dry",
+        "bath"
+      ],
+      "source": "towel"
+    },
+    {
+      "id": "mulberry/wash_face",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/wash_face.svg",
+      "label": "Wash face",
+      "category": "hygiene",
+      "keywords": [
+        "wash",
+        "face",
+        "clean"
+      ],
+      "source": "wash_face_,_to"
+    },
+    {
+      "id": "mulberry/brush_teeth",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/brush_teeth.svg",
+      "label": "Brush teeth",
+      "category": "hygiene",
+      "keywords": [
+        "teeth",
+        "toothbrush",
+        "brush",
+        "clean"
+      ],
+      "source": "brush_teeth_,_to"
+    },
+    {
+      "id": "mulberry/toothbrush",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/toothbrush.svg",
+      "label": "Toothbrush",
+      "category": "hygiene",
+      "keywords": [
+        "toothbrush",
+        "teeth",
+        "brush"
+      ],
+      "source": "toothbrush"
+    },
+    {
+      "id": "mulberry/toothpaste",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/toothpaste.svg",
+      "label": "Toothpaste",
+      "category": "hygiene",
+      "keywords": [
+        "toothpaste",
+        "teeth",
+        "brush"
+      ],
+      "source": "toothpaste"
+    },
+    {
+      "id": "mulberry/brush_hair",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/brush_hair.svg",
+      "label": "Brush hair",
+      "category": "hygiene",
+      "keywords": [
+        "hair",
+        "brush",
+        "comb"
+      ],
+      "source": "brush_hair_,_to"
+    },
+    {
+      "id": "mulberry/bath",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/bath.svg",
+      "label": "Bath",
+      "category": "hygiene",
+      "keywords": [
+        "bath",
+        "bathtime",
+        "wash",
+        "water"
+      ],
+      "source": "bathe_,_to"
+    },
+    {
+      "id": "mulberry/shower",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/shower.svg",
+      "label": "Shower",
+      "category": "hygiene",
+      "keywords": [
+        "shower",
+        "wash",
+        "water"
+      ],
+      "source": "shower_1_,_to"
+    },
+    {
+      "id": "mulberry/wash_hair",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/wash_hair.svg",
+      "label": "Wash hair",
+      "category": "hygiene",
+      "keywords": [
+        "hair",
+        "wash",
+        "shampoo"
+      ],
+      "source": "shampoo_hair_,_to"
+    },
+    {
+      "id": "mulberry/haircut",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/haircut.svg",
+      "label": "Hair cut",
+      "category": "hygiene",
+      "keywords": [
+        "haircut",
+        "hair",
+        "cut",
+        "scissors"
+      ],
+      "source": "haircut"
+    },
+    {
+      "id": "mulberry/nappy",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/nappy.svg",
+      "label": "Nappy",
+      "category": "hygiene",
+      "keywords": [
+        "nappy",
+        "diaper",
+        "change"
+      ],
+      "source": "nappy"
+    },
+    {
+      "id": "mulberry/breakfast",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/breakfast.svg",
+      "label": "Breakfast",
+      "category": "food",
+      "keywords": [
+        "breakfast",
+        "morning",
+        "cereal",
+        "eat"
+      ],
+      "source": "breakfast_4"
+    },
+    {
+      "id": "mulberry/lunch",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/lunch.svg",
+      "label": "Lunch",
+      "category": "food",
+      "keywords": [
+        "lunch",
+        "sandwich",
+        "eat",
+        "meal"
+      ],
+      "source": "lunch_2"
+    },
+    {
+      "id": "mulberry/dinner",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/dinner.svg",
+      "label": "Dinner",
+      "category": "food",
+      "keywords": [
+        "dinner",
+        "tea",
+        "supper",
+        "meal",
+        "eat"
+      ],
+      "source": "dinner"
+    },
+    {
+      "id": "mulberry/snack",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/snack.svg",
+      "label": "Snack",
+      "category": "food",
+      "keywords": [
+        "snack",
+        "biscuit",
+        "cookie",
+        "eat"
+      ],
+      "source": "biscuits"
+    },
+    {
+      "id": "mulberry/eat",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/eat.svg",
+      "label": "Eat",
+      "category": "food",
+      "keywords": [
+        "eat",
+        "food",
+        "spoon",
+        "hungry"
+      ],
+      "source": "eat_1_,_to"
+    },
+    {
+      "id": "mulberry/drink",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/drink.svg",
+      "label": "Drink",
+      "category": "food",
+      "keywords": [
+        "drink",
+        "thirsty",
+        "cup",
+        "glass"
+      ],
+      "source": "drink_3_,_to"
+    },
+    {
+      "id": "mulberry/water",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/water.svg",
+      "label": "Water",
+      "category": "food",
+      "keywords": [
+        "water",
+        "drink",
+        "glass"
+      ],
+      "source": "water"
+    },
+    {
+      "id": "mulberry/milk",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/milk.svg",
+      "label": "Milk",
+      "category": "food",
+      "keywords": [
+        "milk",
+        "drink",
+        "bottle"
+      ],
+      "source": "milk"
+    },
+    {
+      "id": "mulberry/juice",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/juice.svg",
+      "label": "Juice",
+      "category": "food",
+      "keywords": [
+        "juice",
+        "orange",
+        "drink"
+      ],
+      "source": "orange_juice"
+    },
+    {
+      "id": "mulberry/fruit",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/fruit.svg",
+      "label": "Fruit",
+      "category": "food",
+      "keywords": [
+        "fruit",
+        "apple",
+        "orange",
+        "healthy"
+      ],
+      "source": "fruit"
+    },
+    {
+      "id": "mulberry/apple",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/apple.svg",
+      "label": "Apple",
+      "category": "food",
+      "keywords": [
+        "apple",
+        "fruit"
+      ],
+      "source": "apple"
+    },
+    {
+      "id": "mulberry/banana",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/banana.svg",
+      "label": "Banana",
+      "category": "food",
+      "keywords": [
+        "banana",
+        "fruit"
+      ],
+      "source": "banana"
+    },
+    {
+      "id": "openmoji/grapes",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/grapes.svg",
+      "label": "Grapes",
+      "category": "food",
+      "keywords": [
+        "grapes",
+        "fruit"
+      ],
+      "source": "1F347"
+    },
+    {
+      "id": "openmoji/strawberry",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/strawberry.svg",
+      "label": "Strawberries",
+      "category": "food",
+      "keywords": [
+        "strawberry",
+        "strawberries",
+        "fruit"
+      ],
+      "source": "1F353"
+    },
+    {
+      "id": "mulberry/vegetables",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/vegetables.svg",
+      "label": "Vegetables",
+      "category": "food",
+      "keywords": [
+        "vegetables",
+        "veg",
+        "peas",
+        "healthy"
+      ],
+      "source": "vegetables"
+    },
+    {
+      "id": "openmoji/carrot",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/carrot.svg",
+      "label": "Carrot",
+      "category": "food",
+      "keywords": [
+        "carrot",
+        "vegetable",
+        "veg"
+      ],
+      "source": "1F955"
+    },
+    {
+      "id": "mulberry/sandwich",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/sandwich.svg",
+      "label": "Sandwich",
+      "category": "food",
+      "keywords": [
+        "sandwich",
+        "bread",
+        "lunch"
+      ],
+      "source": "sandwich"
+    },
+    {
+      "id": "mulberry/cereal",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/cereal.svg",
+      "label": "Cereal",
+      "category": "food",
+      "keywords": [
+        "cereal",
+        "bowl",
+        "breakfast"
+      ],
+      "source": "cereal"
+    },
+    {
+      "id": "mulberry/toast",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/toast.svg",
+      "label": "Toast",
+      "category": "food",
+      "keywords": [
+        "toast",
+        "bread",
+        "breakfast"
+      ],
+      "source": "toast"
+    },
+    {
+      "id": "mulberry/pasta",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/pasta.svg",
+      "label": "Pasta",
+      "category": "food",
+      "keywords": [
+        "pasta",
+        "spaghetti",
+        "noodles",
+        "dinner"
+      ],
+      "source": "pasta"
+    },
+    {
+      "id": "mulberry/pizza",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/pizza.svg",
+      "label": "Pizza",
+      "category": "food",
+      "keywords": [
+        "pizza",
+        "dinner",
+        "food"
+      ],
+      "source": "pizza"
+    },
+    {
+      "id": "mulberry/crisps",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/crisps.svg",
+      "label": "Crisps",
+      "category": "food",
+      "keywords": [
+        "crisps",
+        "chips",
+        "snack"
+      ],
+      "source": "crisps"
+    },
+    {
+      "id": "mulberry/ice_cream",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/ice_cream.svg",
+      "label": "Ice cream",
+      "category": "food",
+      "keywords": [
+        "ice",
+        "cream",
+        "dessert",
+        "treat"
+      ],
+      "source": "ice_cream_2"
+    },
+    {
+      "id": "mulberry/lunch_box",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/lunch_box.svg",
+      "label": "Lunch box",
+      "category": "food",
+      "keywords": [
+        "lunchbox",
+        "lunch",
+        "packed",
+        "school"
+      ],
+      "source": "lunch_box"
+    },
+    {
+      "id": "mulberry/cook",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/cook.svg",
+      "label": "Cook",
+      "category": "food",
+      "keywords": [
+        "cook",
+        "cooking",
+        "kitchen",
+        "bake"
+      ],
+      "source": "cook_,_to"
+    },
+    {
+      "id": "mulberry/set_table",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/set_table.svg",
+      "label": "Set the table",
+      "category": "food",
+      "keywords": [
+        "table",
+        "set",
+        "plate",
+        "cutlery"
+      ],
+      "source": "set_the_table_,_to"
+    },
+    {
+      "id": "mulberry/school",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/school.svg",
+      "label": "School",
+      "category": "school",
+      "keywords": [
+        "school",
+        "learn",
+        "building"
+      ],
+      "source": "school"
+    },
+    {
+      "id": "mulberry/school_bus",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/school_bus.svg",
+      "label": "School bus",
+      "category": "school",
+      "keywords": [
+        "bus",
+        "school",
+        "ride",
+        "yellow"
+      ],
+      "source": "bus"
+    },
+    {
+      "id": "mulberry/school_bag",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/school_bag.svg",
+      "label": "School bag",
+      "category": "school",
+      "keywords": [
+        "bag",
+        "backpack",
+        "rucksack",
+        "school"
+      ],
+      "source": "school_bag"
+    },
+    {
+      "id": "mulberry/classroom",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/classroom.svg",
+      "label": "Classroom",
+      "category": "school",
+      "keywords": [
+        "classroom",
+        "class",
+        "school"
+      ],
+      "source": "class_room"
+    },
+    {
+      "id": "mulberry/teacher",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/teacher.svg",
+      "label": "Teacher",
+      "category": "school",
+      "keywords": [
+        "teacher",
+        "school",
+        "class"
+      ],
+      "source": "teacher_2a"
+    },
+    {
+      "id": "mulberry/circle_time",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/circle_time.svg",
+      "label": "Circle time",
+      "category": "school",
+      "keywords": [
+        "circle",
+        "carpet",
+        "group",
+        "sit"
+      ],
+      "source": "circle_time"
+    },
+    {
+      "id": "mulberry/assembly",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/assembly.svg",
+      "label": "Assembly",
+      "category": "school",
+      "keywords": [
+        "assembly",
+        "hall",
+        "group",
+        "school"
+      ],
+      "source": "assembly"
+    },
+    {
+      "id": "mulberry/reading",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/reading.svg",
+      "label": "Reading",
+      "category": "school",
+      "keywords": [
+        "read",
+        "reading",
+        "book"
+      ],
+      "source": "read_,_to"
+    },
+    {
+      "id": "mulberry/writing",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/writing.svg",
+      "label": "Writing",
+      "category": "school",
+      "keywords": [
+        "write",
+        "writing",
+        "pencil"
+      ],
+      "source": "write_,_to"
+    },
+    {
+      "id": "mulberry/maths",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/maths.svg",
+      "label": "Maths",
+      "category": "school",
+      "keywords": [
+        "maths",
+        "math",
+        "numbers",
+        "sums"
+      ],
+      "source": "maths"
+    },
+    {
+      "id": "mulberry/art",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/art.svg",
+      "label": "Art",
+      "category": "school",
+      "keywords": [
+        "art",
+        "paint",
+        "palette",
+        "craft"
+      ],
+      "source": "art"
+    },
+    {
+      "id": "mulberry/music_lesson",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/music_lesson.svg",
+      "label": "Music lesson",
+      "category": "school",
+      "keywords": [
+        "music",
+        "lesson",
+        "class",
+        "singing"
+      ],
+      "source": "music_class"
+    },
+    {
+      "id": "mulberry/pe",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/pe.svg",
+      "label": "PE",
+      "category": "school",
+      "keywords": [
+        "pe",
+        "sport",
+        "gym",
+        "exercise",
+        "run"
+      ],
+      "source": "PE"
+    },
+    {
+      "id": "mulberry/computer",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/computer.svg",
+      "label": "Computer",
+      "category": "school",
+      "keywords": [
+        "computer",
+        "ict",
+        "screen"
+      ],
+      "source": "computer_1"
+    },
+    {
+      "id": "mulberry/break_time",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/break_time.svg",
+      "label": "Break time",
+      "category": "school",
+      "keywords": [
+        "break",
+        "playtime",
+        "recess",
+        "playground"
+      ],
+      "source": "break_time_2"
+    },
+    {
+      "id": "openmoji/library",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/library.svg",
+      "label": "Library",
+      "category": "school",
+      "keywords": [
+        "library",
+        "books",
+        "read"
+      ],
+      "source": "1F4DA"
+    },
+    {
+      "id": "mulberry/homework",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/homework.svg",
+      "label": "Homework",
+      "category": "school",
+      "keywords": [
+        "homework",
+        "worksheet",
+        "paper",
+        "pencil"
+      ],
+      "source": "pencil_and_paper"
+    },
+    {
+      "id": "mulberry/pencil",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/pencil.svg",
+      "label": "Pencil",
+      "category": "school",
+      "keywords": [
+        "pencil",
+        "write",
+        "draw"
+      ],
+      "source": "pencil"
+    },
+    {
+      "id": "mulberry/crayons",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/crayons.svg",
+      "label": "Crayons",
+      "category": "school",
+      "keywords": [
+        "crayon",
+        "crayons",
+        "colouring",
+        "draw"
+      ],
+      "source": "crayon"
+    },
+    {
+      "id": "mulberry/scissors",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/scissors.svg",
+      "label": "Scissors",
+      "category": "school",
+      "keywords": [
+        "scissors",
+        "cut",
+        "craft"
+      ],
+      "source": "scissors"
+    },
+    {
+      "id": "mulberry/play",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/play.svg",
+      "label": "Play",
+      "category": "play",
+      "keywords": [
+        "play",
+        "toys",
+        "fun"
+      ],
+      "source": "play_,_to"
+    },
+    {
+      "id": "mulberry/toys",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/toys.svg",
+      "label": "Toys",
+      "category": "play",
+      "keywords": [
+        "toys",
+        "toy",
+        "box",
+        "play"
+      ],
+      "source": "toy_box"
+    },
+    {
+      "id": "mulberry/blocks",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/blocks.svg",
+      "label": "Blocks",
+      "category": "play",
+      "keywords": [
+        "blocks",
+        "bricks",
+        "build",
+        "stack"
+      ],
+      "source": "bricks"
+    },
+    {
+      "id": "mulberry/puzzle",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/puzzle.svg",
+      "label": "Puzzle",
+      "category": "play",
+      "keywords": [
+        "puzzle",
+        "jigsaw",
+        "pieces"
+      ],
+      "source": "jigsaw_puzzle"
+    },
+    {
+      "id": "mulberry/teddy",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/teddy.svg",
+      "label": "Teddy",
+      "category": "play",
+      "keywords": [
+        "teddy",
+        "bear",
+        "cuddly",
+        "toy"
+      ],
+      "source": "teddy_bear"
+    },
+    {
+      "id": "mulberry/doll",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/doll.svg",
+      "label": "Doll",
+      "category": "play",
+      "keywords": [
+        "doll",
+        "toy",
+        "play"
+      ],
+      "source": "doll"
+    },
+    {
+      "id": "mulberry/ball",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/ball.svg",
+      "label": "Ball",
+      "category": "play",
+      "keywords": [
+        "ball",
+        "throw",
+        "catch",
+        "kick"
+      ],
+      "source": "ball_beach"
+    },
+    {
+      "id": "openmoji/football",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/football.svg",
+      "label": "Football",
+      "category": "play",
+      "keywords": [
+        "football",
+        "soccer",
+        "kick",
+        "ball"
+      ],
+      "source": "26BD"
+    },
+    {
+      "id": "mulberry/bubbles",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/bubbles.svg",
+      "label": "Bubbles",
+      "category": "play",
+      "keywords": [
+        "bubbles",
+        "blow"
+      ],
+      "source": "bubbles"
+    },
+    {
+      "id": "mulberry/drawing",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/drawing.svg",
+      "label": "Drawing",
+      "category": "play",
+      "keywords": [
+        "draw",
+        "drawing",
+        "picture",
+        "pencil"
+      ],
+      "source": "draw_,_to"
+    },
+    {
+      "id": "mulberry/colouring",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/colouring.svg",
+      "label": "Colouring",
+      "category": "play",
+      "keywords": [
+        "colouring",
+        "coloring",
+        "book",
+        "crayons"
+      ],
+      "source": "colouring_book"
+    },
+    {
+      "id": "mulberry/painting",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/painting.svg",
+      "label": "Painting",
+      "category": "play",
+      "keywords": [
+        "paint",
+        "painting",
+        "brush",
+        "art"
+      ],
+      "source": "paint_childs"
+    },
+    {
+      "id": "mulberry/playdough",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/playdough.svg",
+      "label": "Playdough",
+      "category": "play",
+      "keywords": [
+        "playdough",
+        "dough",
+        "clay"
+      ],
+      "source": "playdough"
+    },
+    {
+      "id": "mulberry/music",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/music.svg",
+      "label": "Music",
+      "category": "play",
+      "keywords": [
+        "music",
+        "instruments",
+        "drum",
+        "guitar"
+      ],
+      "source": "musical_instruments"
+    },
+    {
+      "id": "mulberry/sing",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/sing.svg",
+      "label": "Sing",
+      "category": "play",
+      "keywords": [
+        "sing",
+        "song",
+        "music"
+      ],
+      "source": "sing_,_to"
+    },
+    {
+      "id": "mulberry/dance",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/dance.svg",
+      "label": "Dance",
+      "category": "play",
+      "keywords": [
+        "dance",
+        "music",
+        "move"
+      ],
+      "source": "dance_,_to"
+    },
+    {
+      "id": "openmoji/book",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/book.svg",
+      "label": "Book",
+      "category": "play",
+      "keywords": [
+        "book",
+        "read",
+        "story"
+      ],
+      "source": "1F4D6"
+    },
+    {
+      "id": "mulberry/tv",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/tv.svg",
+      "label": "TV",
+      "category": "play",
+      "keywords": [
+        "tv",
+        "television",
+        "watch",
+        "cartoons"
+      ],
+      "source": "childrens_tv"
+    },
+    {
+      "id": "openmoji/tablet",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/tablet.svg",
+      "label": "Tablet",
+      "category": "play",
+      "keywords": [
+        "tablet",
+        "ipad",
+        "screen",
+        "games"
+      ],
+      "source": "E1CC"
+    },
+    {
+      "id": "openmoji/video_game",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/video_game.svg",
+      "label": "Video game",
+      "category": "play",
+      "keywords": [
+        "video",
+        "game",
+        "console",
+        "controller"
+      ],
+      "source": "1F3AE"
+    },
+    {
+      "id": "mulberry/swing",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/swing.svg",
+      "label": "Swing",
+      "category": "play",
+      "keywords": [
+        "swing",
+        "playground",
+        "park"
+      ],
+      "source": "swing"
+    },
+    {
+      "id": "mulberry/slide",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/slide.svg",
+      "label": "Slide",
+      "category": "play",
+      "keywords": [
+        "slide",
+        "playground",
+        "park"
+      ],
+      "source": "slide"
+    },
+    {
+      "id": "mulberry/trampoline",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/trampoline.svg",
+      "label": "Trampoline",
+      "category": "play",
+      "keywords": [
+        "trampoline",
+        "jump",
+        "bounce"
+      ],
+      "source": "trampoline"
+    },
+    {
+      "id": "mulberry/sandpit",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/sandpit.svg",
+      "label": "Sandpit",
+      "category": "play",
+      "keywords": [
+        "sand",
+        "sandpit",
+        "sandbox",
+        "dig"
+      ],
+      "source": "sand_pit"
+    },
+    {
+      "id": "mulberry/bike",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/bike.svg",
+      "label": "Bike",
+      "category": "play",
+      "keywords": [
+        "bike",
+        "bicycle",
+        "ride",
+        "cycle"
+      ],
+      "source": "bicycle"
+    },
+    {
+      "id": "openmoji/scooter",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/scooter.svg",
+      "label": "Scooter",
+      "category": "play",
+      "keywords": [
+        "scooter",
+        "ride",
+        "push"
+      ],
+      "source": "1F6F4"
+    },
+    {
+      "id": "mulberry/kite",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/kite.svg",
+      "label": "Kite",
+      "category": "play",
+      "keywords": [
+        "kite",
+        "fly",
+        "wind",
+        "outside"
+      ],
+      "source": "kite"
+    },
+    {
+      "id": "mulberry/swimming",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/swimming.svg",
+      "label": "Swimming",
+      "category": "play",
+      "keywords": [
+        "swim",
+        "swimming",
+        "pool",
+        "water"
+      ],
+      "source": "swim_,_to"
+    },
+    {
+      "id": "mulberry/garden",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/garden.svg",
+      "label": "Garden",
+      "category": "play",
+      "keywords": [
+        "garden",
+        "outside",
+        "grass",
+        "play"
+      ],
+      "source": "back_garden"
+    },
+    {
+      "id": "mulberry/dog",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/dog.svg",
+      "label": "Dog",
+      "category": "play",
+      "keywords": [
+        "dog",
+        "pet",
+        "puppy"
+      ],
+      "source": "dog"
+    },
+    {
+      "id": "mulberry/cat",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/cat.svg",
+      "label": "Cat",
+      "category": "play",
+      "keywords": [
+        "cat",
+        "pet",
+        "kitten"
+      ],
+      "source": "cat"
+    },
+    {
+      "id": "mulberry/home",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/home.svg",
+      "label": "Home",
+      "category": "places",
+      "keywords": [
+        "home",
+        "house"
+      ],
+      "source": "house"
+    },
+    {
+      "id": "openmoji/park",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/park.svg",
+      "label": "Park",
+      "category": "places",
+      "keywords": [
+        "park",
+        "trees",
+        "outside"
+      ],
+      "source": "1F333"
+    },
+    {
+      "id": "mulberry/playground",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/playground.svg",
+      "label": "Playground",
+      "category": "places",
+      "keywords": [
+        "playground",
+        "slide",
+        "swings",
+        "park"
+      ],
+      "source": "play_area"
+    },
+    {
+      "id": "mulberry/shop",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/shop.svg",
+      "label": "Shop",
+      "category": "places",
+      "keywords": [
+        "shop",
+        "shopping",
+        "store",
+        "buy"
+      ],
+      "source": "shop"
+    },
+    {
+      "id": "openmoji/supermarket",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/supermarket.svg",
+      "label": "Supermarket",
+      "category": "places",
+      "keywords": [
+        "supermarket",
+        "shopping",
+        "trolley",
+        "food"
+      ],
+      "source": "1F6D2"
+    },
+    {
+      "id": "mulberry/cafe",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/cafe.svg",
+      "label": "Cafe",
+      "category": "places",
+      "keywords": [
+        "cafe",
+        "restaurant",
+        "eat",
+        "out"
+      ],
+      "source": "cafe"
+    },
+    {
+      "id": "mulberry/doctors",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/doctors.svg",
+      "label": "Doctor's",
+      "category": "places",
+      "keywords": [
+        "doctor",
+        "surgery",
+        "appointment",
+        "health"
+      ],
+      "source": "surgery_health_centre"
+    },
+    {
+      "id": "mulberry/dentist",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/dentist.svg",
+      "label": "Dentist",
+      "category": "places",
+      "keywords": [
+        "dentist",
+        "teeth",
+        "checkup"
+      ],
+      "source": "dentist_1a"
+    },
+    {
+      "id": "openmoji/hospital",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/hospital.svg",
+      "label": "Hospital",
+      "category": "places",
+      "keywords": [
+        "hospital",
+        "doctor",
+        "nurse",
+        "health"
+      ],
+      "source": "1F3E5"
+    },
+    {
+      "id": "openmoji/hairdresser",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/hairdresser.svg",
+      "label": "Hairdresser",
+      "category": "places",
+      "keywords": [
+        "hairdresser",
+        "haircut",
+        "barber",
+        "hair"
+      ],
+      "source": "1F487"
+    },
+    {
+      "id": "mulberry/swimming_pool",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/swimming_pool.svg",
+      "label": "Swimming pool",
+      "category": "places",
+      "keywords": [
+        "pool",
+        "swimming",
+        "swim"
+      ],
+      "source": "swimming_class"
+    },
+    {
+      "id": "mulberry/beach",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/beach.svg",
+      "label": "Beach",
+      "category": "places",
+      "keywords": [
+        "beach",
+        "sea",
+        "sand",
+        "holiday"
+      ],
+      "source": "beach"
+    },
+    {
+      "id": "mulberry/go_outside",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/go_outside.svg",
+      "label": "Go outside",
+      "category": "places",
+      "keywords": [
+        "outside",
+        "outdoors",
+        "garden",
+        "play"
+      ],
+      "source": "go_outside_,_to"
+    },
+    {
+      "id": "mulberry/walk",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/walk.svg",
+      "label": "Walk",
+      "category": "places",
+      "keywords": [
+        "walk",
+        "walking",
+        "outside"
+      ],
+      "source": "walk_,_to"
+    },
+    {
+      "id": "mulberry/car",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/car.svg",
+      "label": "Car",
+      "category": "places",
+      "keywords": [
+        "car",
+        "drive",
+        "ride"
+      ],
+      "source": "car"
+    },
+    {
+      "id": "mulberry/bus",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/bus.svg",
+      "label": "Bus",
+      "category": "places",
+      "keywords": [
+        "bus",
+        "ride",
+        "travel"
+      ],
+      "source": "bus_single_decker"
+    },
+    {
+      "id": "mulberry/train",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/train.svg",
+      "label": "Train",
+      "category": "places",
+      "keywords": [
+        "train",
+        "railway",
+        "travel"
+      ],
+      "source": "train"
+    },
+    {
+      "id": "mulberry/plane",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/plane.svg",
+      "label": "Plane",
+      "category": "places",
+      "keywords": [
+        "plane",
+        "aeroplane",
+        "airplane",
+        "fly",
+        "holiday"
+      ],
+      "source": "aeroplane"
+    },
+    {
+      "id": "mulberry/mum",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/mum.svg",
+      "label": "Mum",
+      "category": "people",
+      "keywords": [
+        "mum",
+        "mom",
+        "mummy",
+        "mother",
+        "parent"
+      ],
+      "source": "mum_parent"
+    },
+    {
+      "id": "mulberry/dad",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/dad.svg",
+      "label": "Dad",
+      "category": "people",
+      "keywords": [
+        "dad",
+        "daddy",
+        "father",
+        "parent"
+      ],
+      "source": "dad_parent"
+    },
+    {
+      "id": "mulberry/baby",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/baby.svg",
+      "label": "Baby",
+      "category": "people",
+      "keywords": [
+        "baby",
+        "infant"
+      ],
+      "source": "baby"
+    },
+    {
+      "id": "mulberry/brother",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/brother.svg",
+      "label": "Brother",
+      "category": "people",
+      "keywords": [
+        "brother",
+        "sibling",
+        "family"
+      ],
+      "source": "brother"
+    },
+    {
+      "id": "mulberry/sister",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/sister.svg",
+      "label": "Sister",
+      "category": "people",
+      "keywords": [
+        "sister",
+        "sibling",
+        "family"
+      ],
+      "source": "sister"
+    },
+    {
+      "id": "mulberry/grandma",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/grandma.svg",
+      "label": "Grandma",
+      "category": "people",
+      "keywords": [
+        "grandma",
+        "granny",
+        "nan",
+        "grandmother"
+      ],
+      "source": "grandmother"
+    },
+    {
+      "id": "mulberry/grandpa",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/grandpa.svg",
+      "label": "Grandpa",
+      "category": "people",
+      "keywords": [
+        "grandpa",
+        "grandad",
+        "grandfather"
+      ],
+      "source": "grandfather"
+    },
+    {
+      "id": "mulberry/family",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/family.svg",
+      "label": "Family",
+      "category": "people",
+      "keywords": [
+        "family",
+        "parents",
+        "children"
+      ],
+      "source": "family"
+    },
+    {
+      "id": "openmoji/friend",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/friend.svg",
+      "label": "Friend",
+      "category": "people",
+      "keywords": [
+        "friend",
+        "friends",
+        "together"
+      ],
+      "source": "1F9D1-200D-1F91D-200D-1F9D1"
+    },
+    {
+      "id": "openmoji/boy",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/boy.svg",
+      "label": "Boy",
+      "category": "people",
+      "keywords": [
+        "boy",
+        "child",
+        "kid",
+        "me"
+      ],
+      "source": "1F466"
+    },
+    {
+      "id": "openmoji/girl",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/girl.svg",
+      "label": "Girl",
+      "category": "people",
+      "keywords": [
+        "girl",
+        "child",
+        "kid",
+        "me"
+      ],
+      "source": "1F467"
+    },
+    {
+      "id": "openmoji/teacher",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/teacher.svg",
+      "label": "Teacher",
+      "category": "people",
+      "keywords": [
+        "teacher",
+        "school",
+        "adult"
+      ],
+      "source": "1F9D1-200D-1F3EB"
+    },
+    {
+      "id": "mulberry/doctor",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/doctor.svg",
+      "label": "Doctor",
+      "category": "people",
+      "keywords": [
+        "doctor",
+        "nurse",
+        "health"
+      ],
+      "source": "doctor_1a"
+    },
+    {
+      "id": "openmoji/happy",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/happy.svg",
+      "label": "Happy",
+      "category": "feelings",
+      "keywords": [
+        "happy",
+        "smile",
+        "glad",
+        "good"
+      ],
+      "source": "1F600"
+    },
+    {
+      "id": "openmoji/sad",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/sad.svg",
+      "label": "Sad",
+      "category": "feelings",
+      "keywords": [
+        "sad",
+        "cry",
+        "upset",
+        "unhappy"
+      ],
+      "source": "1F622"
+    },
+    {
+      "id": "openmoji/angry",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/angry.svg",
+      "label": "Angry",
+      "category": "feelings",
+      "keywords": [
+        "angry",
+        "cross",
+        "mad",
+        "upset"
+      ],
+      "source": "1F621"
+    },
+    {
+      "id": "openmoji/scared",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/scared.svg",
+      "label": "Scared",
+      "category": "feelings",
+      "keywords": [
+        "scared",
+        "afraid",
+        "frightened",
+        "fear"
+      ],
+      "source": "1F628"
+    },
+    {
+      "id": "openmoji/worried",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/worried.svg",
+      "label": "Worried",
+      "category": "feelings",
+      "keywords": [
+        "worried",
+        "nervous",
+        "anxious"
+      ],
+      "source": "1F61F"
+    },
+    {
+      "id": "openmoji/surprised",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/surprised.svg",
+      "label": "Surprised",
+      "category": "feelings",
+      "keywords": [
+        "surprised",
+        "shocked",
+        "wow"
+      ],
+      "source": "1F62E"
+    },
+    {
+      "id": "openmoji/excited",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/excited.svg",
+      "label": "Excited",
+      "category": "feelings",
+      "keywords": [
+        "excited",
+        "wow",
+        "yay"
+      ],
+      "source": "1F929"
+    },
+    {
+      "id": "openmoji/calm",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/calm.svg",
+      "label": "Calm",
+      "category": "feelings",
+      "keywords": [
+        "calm",
+        "relaxed",
+        "peaceful",
+        "ok"
+      ],
+      "source": "1F60C"
+    },
+    {
+      "id": "openmoji/tired",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/tired.svg",
+      "label": "Tired",
+      "category": "feelings",
+      "keywords": [
+        "tired",
+        "sleepy",
+        "yawn"
+      ],
+      "source": "1F971"
+    },
+    {
+      "id": "openmoji/sick",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/sick.svg",
+      "label": "Sick",
+      "category": "feelings",
+      "keywords": [
+        "sick",
+        "ill",
+        "poorly",
+        "unwell"
+      ],
+      "source": "1F912"
+    },
+    {
+      "id": "openmoji/hurt",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/hurt.svg",
+      "label": "Hurt",
+      "category": "feelings",
+      "keywords": [
+        "hurt",
+        "pain",
+        "ouch",
+        "injury"
+      ],
+      "source": "1F915"
+    },
+    {
+      "id": "mulberry/headache",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/headache.svg",
+      "label": "Headache",
+      "category": "feelings",
+      "keywords": [
+        "headache",
+        "head",
+        "pain",
+        "hurt"
+      ],
+      "source": "headache"
+    },
+    {
+      "id": "mulberry/tummy_ache",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/tummy_ache.svg",
+      "label": "Tummy ache",
+      "category": "feelings",
+      "keywords": [
+        "tummy",
+        "stomach",
+        "ache",
+        "pain"
+      ],
+      "source": "stomach_ache"
+    },
+    {
+      "id": "mulberry/hug",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/hug.svg",
+      "label": "Hug",
+      "category": "feelings",
+      "keywords": [
+        "hug",
+        "cuddle",
+        "love"
+      ],
+      "source": "hug_,_to"
+    },
+    {
+      "id": "openmoji/love",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/love.svg",
+      "label": "Love",
+      "category": "feelings",
+      "keywords": [
+        "love",
+        "heart",
+        "like"
+      ],
+      "source": "2764"
+    },
+    {
+      "id": "mulberry/wait",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/wait.svg",
+      "label": "Wait",
+      "category": "helpers",
+      "keywords": [
+        "wait",
+        "waiting",
+        "patience"
+      ],
+      "source": "wait_,_to"
+    },
+    {
+      "id": "openmoji/finished",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/finished.svg",
+      "label": "Finished",
+      "category": "helpers",
+      "keywords": [
+        "finished",
+        "all done",
+        "done",
+        "complete"
+      ],
+      "source": "2705"
+    },
+    {
+      "id": "openmoji/stop",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/stop.svg",
+      "label": "Stop",
+      "category": "helpers",
+      "keywords": [
+        "stop",
+        "halt",
+        "no"
+      ],
+      "source": "1F6D1"
+    },
+    {
+      "id": "openmoji/go",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/go.svg",
+      "label": "Go",
+      "category": "helpers",
+      "keywords": [
+        "go",
+        "start",
+        "green"
+      ],
+      "source": "1F7E2"
+    },
+    {
+      "id": "openmoji/yes",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/yes.svg",
+      "label": "Yes",
+      "category": "helpers",
+      "keywords": [
+        "yes",
+        "ok",
+        "good",
+        "thumbs up"
+      ],
+      "source": "1F44D"
+    },
+    {
+      "id": "openmoji/no",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/no.svg",
+      "label": "No",
+      "category": "helpers",
+      "keywords": [
+        "no",
+        "not",
+        "thumbs down"
+      ],
+      "source": "1F44E"
+    },
+    {
+      "id": "mulberry/help",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/help.svg",
+      "label": "Help",
+      "category": "helpers",
+      "keywords": [
+        "help",
+        "helping",
+        "assist"
+      ],
+      "source": "help_,_to"
+    },
+    {
+      "id": "openmoji/choose",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/choose.svg",
+      "label": "Choose",
+      "category": "helpers",
+      "keywords": [
+        "choose",
+        "choice",
+        "pick",
+        "point"
+      ],
+      "source": "1F449"
+    },
+    {
+      "id": "mulberry/break",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/break.svg",
+      "label": "Break",
+      "category": "helpers",
+      "keywords": [
+        "break",
+        "rest",
+        "relax",
+        "chill"
+      ],
+      "source": "relax_,_to"
+    },
+    {
+      "id": "mulberry/quiet",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/quiet.svg",
+      "label": "Quiet",
+      "category": "helpers",
+      "keywords": [
+        "quiet",
+        "shh",
+        "silent",
+        "calm"
+      ],
+      "source": "quiet"
+    },
+    {
+      "id": "openmoji/deep_breath",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/deep_breath.svg",
+      "label": "Deep breath",
+      "category": "helpers",
+      "keywords": [
+        "breathe",
+        "breath",
+        "calm down",
+        "relax"
+      ],
+      "source": "1F62E-200D-1F4A8"
+    },
+    {
+      "id": "mulberry/headphones",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/headphones.svg",
+      "label": "Headphones",
+      "category": "helpers",
+      "keywords": [
+        "headphones",
+        "ear defenders",
+        "noise",
+        "music"
+      ],
+      "source": "headphones"
+    },
+    {
+      "id": "mulberry/sit_down",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/sit_down.svg",
+      "label": "Sit down",
+      "category": "helpers",
+      "keywords": [
+        "sit",
+        "chair",
+        "seat"
+      ],
+      "source": "sit_,_to"
+    },
+    {
+      "id": "mulberry/look",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/look.svg",
+      "label": "Look",
+      "category": "helpers",
+      "keywords": [
+        "look",
+        "see",
+        "watch",
+        "eyes"
+      ],
+      "source": "look_,_to"
+    },
+    {
+      "id": "mulberry/listen",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/listen.svg",
+      "label": "Listen",
+      "category": "helpers",
+      "keywords": [
+        "listen",
+        "hear",
+        "ears"
+      ],
+      "source": "hear_,_to"
+    },
+    {
+      "id": "openmoji/well_done",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/well_done.svg",
+      "label": "Well done",
+      "category": "helpers",
+      "keywords": [
+        "well done",
+        "good job",
+        "clap",
+        "great"
+      ],
+      "source": "1F44F"
+    },
+    {
+      "id": "mulberry/tidy_up",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/tidy_up.svg",
+      "label": "Tidy up",
+      "category": "helpers",
+      "keywords": [
+        "tidy",
+        "put away",
+        "toys"
+      ],
+      "source": "tidy_up_,_to"
+    },
+    {
+      "id": "openmoji/clean_up",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/clean_up.svg",
+      "label": "Clean up",
+      "category": "helpers",
+      "keywords": [
+        "clean",
+        "sweep",
+        "broom"
+      ],
+      "source": "1F9F9"
+    },
+    {
+      "id": "mulberry/change",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/change.svg",
+      "label": "Change",
+      "category": "helpers",
+      "keywords": [
+        "change",
+        "different",
+        "new"
+      ],
+      "source": "change_,_to"
+    },
+    {
+      "id": "openmoji/surprise",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/surprise.svg",
+      "label": "Surprise",
+      "category": "helpers",
+      "keywords": [
+        "surprise",
+        "unknown",
+        "question",
+        "mystery"
+      ],
+      "source": "2753"
+    },
+    {
+      "id": "mulberry/timer",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/timer.svg",
+      "label": "Timer",
+      "category": "helpers",
+      "keywords": [
+        "timer",
+        "time",
+        "countdown",
+        "minutes"
+      ],
+      "source": "timer_2"
+    },
+    {
+      "id": "mulberry/clock",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/clock.svg",
+      "label": "Clock",
+      "category": "helpers",
+      "keywords": [
+        "clock",
+        "time",
+        "hour"
+      ],
+      "source": "clock"
+    },
+    {
+      "id": "mulberry/birthday",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/birthday.svg",
+      "label": "Birthday",
+      "category": "helpers",
+      "keywords": [
+        "birthday",
+        "cake",
+        "candles"
+      ],
+      "source": "birthday_cake"
+    },
+    {
+      "id": "openmoji/party",
+      "set": "openmoji",
+      "asset": "assets/symbols/openmoji/party.svg",
+      "label": "Party",
+      "category": "helpers",
+      "keywords": [
+        "party",
+        "celebrate",
+        "fun"
+      ],
+      "source": "1F389"
+    },
+    {
+      "id": "mulberry/present",
+      "set": "mulberry",
+      "asset": "assets/symbols/mulberry/present.svg",
+      "label": "Present",
+      "category": "helpers",
+      "keywords": [
+        "present",
+        "gift",
+        "surprise"
+      ],
+      "source": "present"
+    }
+  ]
+}
