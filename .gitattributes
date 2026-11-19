@@ -1,0 +1,11 @@
+* text=auto eol=lf
+
+# Generated code: collapsed in diffs and left out of language stats.
+lib/**/*.g.dart linguist-generated=true
+web/drift_worker.js linguist-vendored=true -diff
+assets/symbols/**/*.svg linguist-vendored=true -diff
+
+*.png binary
+*.ttf binary
+*.wasm binary
+*.jar binary

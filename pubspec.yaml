@@ -1,0 +1,88 @@
+name: daysteps
+description: >-
+  Offline picture schedules, first-then boards and visual timers for autistic
+  children. An adult edits the schedule; the child's device just shows it.
+publish_to: 'none'
+homepage: https://github.com/lobojoel2003/Daysteps
+repository: https://github.com/lobojoel2003/Daysteps
+issue_tracker: https://github.com/lobojoel2003/Daysteps/issues
+
+# Versioning: MAJOR.MINOR.PATCH+BUILD
+# - The version name (before "+") follows Semantic Versioning and must match
+#   the release tag (v1.2.3 -> 1.2.3).
+# - The build number (after "+") is the Android versionCode. It must increase
+#   with every release. Use `tool/bump_version.sh` to change both.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.14.0
+  flutter: '>=3.50.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  material_ui: ^1.11.0
+
+  archive: ^4.7.1
+  collection: ^1.19.1
+  drift: ^2.35.4
+  drift_flutter: ^0.3.1
+  file_picker: ^13.4.0
+  flutter_riverpod: ^3.5.0
+  flutter_svg: ^2.4.0
+  flutter_tts: ^4.2.5
+  http: ^1.6.0
+  image_picker: ^1.2.4
+  mobile_scanner: ^7.5.0
+  package_info_plus: ^10.2.2
+  qr: ^4.0.1
+  share_plus: ^13.3.1
+  url_launcher: ^6.3.3
+  uuid: ^4.6.0
+  wakelock_plus: ^1.8.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.17.1
+  drift_dev: ^2.35.3
+  flutter_launcher_icons: ^0.14.4
+  flutter_lints: ^6.0.0
+
+# Native build hook options for package:sqlite3.
+# Android ships a precompiled SQLite. When running `flutter test` on a Linux
+# host we link the system library (libsqlite3) instead, so tests work offline.
+hooks:
+  user_defines:
+    sqlite3:
+      source:
+        linux: system
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/symbols/
+    - assets/symbols/mulberry/
+    - assets/symbols/openmoji/
+    - assets/branding/logo.svg
+    - assets/fonts/AtkinsonHyperlegible-OFL.txt
+
+  fonts:
+    - family: Atkinson Hyperlegible
+      fonts:
+        - asset: assets/fonts/AtkinsonHyperlegible-Regular.ttf
+        - asset: assets/fonts/AtkinsonHyperlegible-Bold.ttf
+          weight: 700
+
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: assets/branding/icon-1024.png
+  min_sdk_android: 24
+  adaptive_icon_background: '#1D6F7A'
+  adaptive_icon_foreground: assets/branding/icon-foreground-1024.png
+  adaptive_icon_monochrome: assets/branding/icon-monochrome-1024.png
+  # Web icons are rendered by tool/branding/render_icons.mjs (maskable too).
+  web:
+    generate: false
