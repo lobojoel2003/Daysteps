@@ -1,0 +1,1343 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "url": "README.md",
+      "hash": "beaac749",
+      "size": 636,
+      "urlHashed": false
+    },
+    {
+      "url": "assets/AssetManifest.10931548.bin",
+      "hash": "10931548",
+      "size": 17378,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/AssetManifest.bin.5f2c858b.json",
+      "hash": "5f2c858b",
+      "size": 23174,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/FontManifest.584319ac.json",
+      "hash": "584319ac",
+      "size": 365,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/NOTICES.797cccfe",
+      "hash": "797cccfe",
+      "size": 1506434,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/branding/logo.c518641b.svg",
+      "hash": "c518641b",
+      "size": 536,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/fonts/AtkinsonHyperlegible-Bold.5a3b0c8c.ttf",
+      "hash": "5a3b0c8c",
+      "size": 55256,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/fonts/AtkinsonHyperlegible-OFL.f32d22b3.txt",
+      "hash": "f32d22b3",
+      "size": 4352,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/fonts/AtkinsonHyperlegible-Regular.7fb917c8.ttf",
+      "hash": "7fb917c8",
+      "size": 54348,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/ATTRIBUTION.c797e5a4.md",
+      "hash": "c797e5a4",
+      "size": 1591,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/catalog.95f99e46.json",
+      "hash": "95f99e46",
+      "size": 53902,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/apple.c33148f0.svg",
+      "hash": "c33148f0",
+      "size": 2634,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/art.9fa8671c.svg",
+      "hash": "9fa8671c",
+      "size": 9329,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/assembly.df149683.svg",
+      "hash": "df149683",
+      "size": 6728,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/baby.166a80df.svg",
+      "hash": "166a80df",
+      "size": 7594,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/ball.c9bace1c.svg",
+      "hash": "c9bace1c",
+      "size": 2500,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/banana.0af5291f.svg",
+      "hash": "0af5291f",
+      "size": 2581,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/bath.fd65fd71.svg",
+      "hash": "fd65fd71",
+      "size": 6670,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/beach.e0091a56.svg",
+      "hash": "e0091a56",
+      "size": 8334,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/bedtime_story.91829c29.svg",
+      "hash": "91829c29",
+      "size": 12094,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/bike.de80ec05.svg",
+      "hash": "de80ec05",
+      "size": 6130,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/birthday.ae8443ef.svg",
+      "hash": "ae8443ef",
+      "size": 18322,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/blocks.60690798.svg",
+      "hash": "60690798",
+      "size": 2201,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/break.e186ee1d.svg",
+      "hash": "e186ee1d",
+      "size": 16849,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/break_time.dea400be.svg",
+      "hash": "dea400be",
+      "size": 18536,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/breakfast.6e9dd4f7.svg",
+      "hash": "6e9dd4f7",
+      "size": 14202,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/brother.de4b7c3d.svg",
+      "hash": "de4b7c3d",
+      "size": 15894,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/brush_hair.46a0d237.svg",
+      "hash": "46a0d237",
+      "size": 11208,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/brush_teeth.2e63c0d0.svg",
+      "hash": "2e63c0d0",
+      "size": 11336,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/bubbles.3b52e96b.svg",
+      "hash": "3b52e96b",
+      "size": 6842,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/bus.cd05c2e5.svg",
+      "hash": "cd05c2e5",
+      "size": 6671,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/cafe.abc13d7f.svg",
+      "hash": "abc13d7f",
+      "size": 21148,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/car.0db8a5eb.svg",
+      "hash": "0db8a5eb",
+      "size": 4387,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/cat.cad8caa5.svg",
+      "hash": "cad8caa5",
+      "size": 7031,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/cereal.eaa8007d.svg",
+      "hash": "eaa8007d",
+      "size": 22412,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/change.37c6ba49.svg",
+      "hash": "37c6ba49",
+      "size": 3404,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/circle_time.9d045a5c.svg",
+      "hash": "9d045a5c",
+      "size": 11539,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/classroom.6bb78cc2.svg",
+      "hash": "6bb78cc2",
+      "size": 3977,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/clock.27eeeb83.svg",
+      "hash": "27eeeb83",
+      "size": 7344,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/coat.282738f0.svg",
+      "hash": "282738f0",
+      "size": 5302,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/colouring.b6737d72.svg",
+      "hash": "b6737d72",
+      "size": 9260,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/computer.893130a6.svg",
+      "hash": "893130a6",
+      "size": 2369,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/cook.9161b7e3.svg",
+      "hash": "9161b7e3",
+      "size": 9842,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/crayons.b2cd2198.svg",
+      "hash": "b2cd2198",
+      "size": 2207,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/crisps.0d2c986e.svg",
+      "hash": "0d2c986e",
+      "size": 7129,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/dad.e592c6dc.svg",
+      "hash": "e592c6dc",
+      "size": 17933,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/dance.a20cd0b6.svg",
+      "hash": "a20cd0b6",
+      "size": 11847,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/dentist.97438e92.svg",
+      "hash": "97438e92",
+      "size": 17653,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/dinner.34c93e33.svg",
+      "hash": "34c93e33",
+      "size": 7146,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/doctor.b349fb10.svg",
+      "hash": "b349fb10",
+      "size": 11665,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/doctors.9e571a7b.svg",
+      "hash": "9e571a7b",
+      "size": 4456,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/dog.9d22342a.svg",
+      "hash": "9d22342a",
+      "size": 6169,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/doll.8b64a381.svg",
+      "hash": "8b64a381",
+      "size": 9563,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/drawing.0064e4ca.svg",
+      "hash": "0064e4ca",
+      "size": 8709,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/drink.b47ca3cc.svg",
+      "hash": "b47ca3cc",
+      "size": 14235,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/dry_hands.c1f95eb7.svg",
+      "hash": "c1f95eb7",
+      "size": 7654,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/eat.ba09759b.svg",
+      "hash": "ba09759b",
+      "size": 13157,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/family.aaa90b2a.svg",
+      "hash": "aaa90b2a",
+      "size": 31397,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/flush.94b6fbcf.svg",
+      "hash": "94b6fbcf",
+      "size": 4655,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/fruit.1172801c.svg",
+      "hash": "1172801c",
+      "size": 4571,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/garden.bd051989.svg",
+      "hash": "bd051989",
+      "size": 11275,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/get_dressed.24df7b5e.svg",
+      "hash": "24df7b5e",
+      "size": 19311,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/get_up.f97092d7.svg",
+      "hash": "f97092d7",
+      "size": 9308,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/go_outside.c07830cc.svg",
+      "hash": "c07830cc",
+      "size": 14040,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/go_to_bed.5cf89598.svg",
+      "hash": "5cf89598",
+      "size": 7333,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/grandma.97b1ee42.svg",
+      "hash": "97b1ee42",
+      "size": 37566,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/grandpa.3d2dca6e.svg",
+      "hash": "3d2dca6e",
+      "size": 39273,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/haircut.072b0b76.svg",
+      "hash": "072b0b76",
+      "size": 12188,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/headache.dd04b4c2.svg",
+      "hash": "dd04b4c2",
+      "size": 4910,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/headphones.cfc42315.svg",
+      "hash": "cfc42315",
+      "size": 2818,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/help.e3f00bc6.svg",
+      "hash": "e3f00bc6",
+      "size": 5862,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/home.9118c9e5.svg",
+      "hash": "9118c9e5",
+      "size": 1636,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/homework.eae2e964.svg",
+      "hash": "eae2e964",
+      "size": 1359,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/hug.83c88eed.svg",
+      "hash": "83c88eed",
+      "size": 10162,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/ice_cream.4f61a95e.svg",
+      "hash": "4f61a95e",
+      "size": 3003,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/juice.a2a46cb4.svg",
+      "hash": "a2a46cb4",
+      "size": 1997,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/kite.dc54c5c5.svg",
+      "hash": "dc54c5c5",
+      "size": 1149,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/listen.05beb57a.svg",
+      "hash": "05beb57a",
+      "size": 4396,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/look.7aa5efc6.svg",
+      "hash": "7aa5efc6",
+      "size": 15170,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/lunch.832a8a52.svg",
+      "hash": "832a8a52",
+      "size": 9961,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/lunch_box.66046583.svg",
+      "hash": "66046583",
+      "size": 5709,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/make_bed.7bfe0590.svg",
+      "hash": "7bfe0590",
+      "size": 5925,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/maths.f4bfa5e9.svg",
+      "hash": "f4bfa5e9",
+      "size": 8046,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/milk.17ddec6c.svg",
+      "hash": "17ddec6c",
+      "size": 8418,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/mum.b67209a0.svg",
+      "hash": "b67209a0",
+      "size": 16222,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/music.b5b07723.svg",
+      "hash": "b5b07723",
+      "size": 16193,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/music_lesson.d822f5b5.svg",
+      "hash": "d822f5b5",
+      "size": 4881,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/nappy.8d95dae4.svg",
+      "hash": "8d95dae4",
+      "size": 2963,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/night.d50a3ad6.svg",
+      "hash": "d50a3ad6",
+      "size": 1884,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/painting.560ce6db.svg",
+      "hash": "560ce6db",
+      "size": 6832,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/pasta.e241a02f.svg",
+      "hash": "e241a02f",
+      "size": 5554,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/pe.77b1942d.svg",
+      "hash": "77b1942d",
+      "size": 11876,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/pencil.f61788bf.svg",
+      "hash": "f61788bf",
+      "size": 615,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/pizza.6a8e6af9.svg",
+      "hash": "6a8e6af9",
+      "size": 19251,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/plane.f98a878f.svg",
+      "hash": "f98a878f",
+      "size": 3573,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/play.1574e273.svg",
+      "hash": "1574e273",
+      "size": 24422,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/playdough.95b8c6ab.svg",
+      "hash": "95b8c6ab",
+      "size": 3405,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/playground.81557a2d.svg",
+      "hash": "81557a2d",
+      "size": 3181,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/present.39de564c.svg",
+      "hash": "39de564c",
+      "size": 7465,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/puzzle.8554289c.svg",
+      "hash": "8554289c",
+      "size": 6894,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/pyjamas.fb83a06d.svg",
+      "hash": "fb83a06d",
+      "size": 2015,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/quiet.fffb7da0.svg",
+      "hash": "fffb7da0",
+      "size": 8780,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/reading.e82fbda2.svg",
+      "hash": "e82fbda2",
+      "size": 12322,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/sandpit.67e03ca0.svg",
+      "hash": "67e03ca0",
+      "size": 10834,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/sandwich.15d6a8e4.svg",
+      "hash": "15d6a8e4",
+      "size": 6214,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/school.d9b8f677.svg",
+      "hash": "d9b8f677",
+      "size": 2254,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/school_bag.f8b279b6.svg",
+      "hash": "f8b279b6",
+      "size": 6418,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/school_bus.c07712f7.svg",
+      "hash": "c07712f7",
+      "size": 5309,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/scissors.364f9c73.svg",
+      "hash": "364f9c73",
+      "size": 4063,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/set_table.29acf670.svg",
+      "hash": "29acf670",
+      "size": 8725,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/shoes.cf7dff83.svg",
+      "hash": "cf7dff83",
+      "size": 15348,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/shop.ff3089ed.svg",
+      "hash": "ff3089ed",
+      "size": 2310,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/shower.902fc2db.svg",
+      "hash": "902fc2db",
+      "size": 17025,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/sing.6c11a404.svg",
+      "hash": "6c11a404",
+      "size": 11070,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/sister.8c39988d.svg",
+      "hash": "8c39988d",
+      "size": 14878,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/sit_down.6c5fa904.svg",
+      "hash": "6c5fa904",
+      "size": 8744,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/sleep.df4bb1c3.svg",
+      "hash": "df4bb1c3",
+      "size": 9898,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/slide.557afaa7.svg",
+      "hash": "557afaa7",
+      "size": 2653,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/snack.4bc203cd.svg",
+      "hash": "4bc203cd",
+      "size": 13927,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/soap.f95d91c3.svg",
+      "hash": "f95d91c3",
+      "size": 3886,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/socks.36a025c7.svg",
+      "hash": "36a025c7",
+      "size": 1664,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/swimming.3305abb7.svg",
+      "hash": "3305abb7",
+      "size": 9923,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/swimming_pool.8d1c4452.svg",
+      "hash": "8d1c4452",
+      "size": 16874,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/swing.d2953852.svg",
+      "hash": "d2953852",
+      "size": 863,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/teacher.42f131f6.svg",
+      "hash": "42f131f6",
+      "size": 17084,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/teddy.21195312.svg",
+      "hash": "21195312",
+      "size": 8913,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/tidy_up.40fc2d50.svg",
+      "hash": "40fc2d50",
+      "size": 6553,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/timer.66a6052f.svg",
+      "hash": "66a6052f",
+      "size": 20552,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/toast.c9189344.svg",
+      "hash": "c9189344",
+      "size": 6642,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/toilet.82ee78f3.svg",
+      "hash": "82ee78f3",
+      "size": 3062,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/toothbrush.dc60f116.svg",
+      "hash": "dc60f116",
+      "size": 1213,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/toothpaste.9d1dff00.svg",
+      "hash": "9d1dff00",
+      "size": 2095,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/towel.266e1e85.svg",
+      "hash": "266e1e85",
+      "size": 935,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/toys.76fb0c77.svg",
+      "hash": "76fb0c77",
+      "size": 28011,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/train.458e911a.svg",
+      "hash": "458e911a",
+      "size": 6617,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/trampoline.f8f72388.svg",
+      "hash": "f8f72388",
+      "size": 2174,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/tummy_ache.e2e7c948.svg",
+      "hash": "e2e7c948",
+      "size": 7811,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/tv.2a7df8e9.svg",
+      "hash": "2a7df8e9",
+      "size": 16327,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/vegetables.0a156fd6.svg",
+      "hash": "0a156fd6",
+      "size": 37769,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/wait.e438bf6a.svg",
+      "hash": "e438bf6a",
+      "size": 6801,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/wake_up.86a62d9d.svg",
+      "hash": "86a62d9d",
+      "size": 6711,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/walk.19c67938.svg",
+      "hash": "19c67938",
+      "size": 7178,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/wash_face.c16cce9f.svg",
+      "hash": "c16cce9f",
+      "size": 12486,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/wash_hair.a07db234.svg",
+      "hash": "a07db234",
+      "size": 7045,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/wash_hands.2e6694a7.svg",
+      "hash": "2e6694a7",
+      "size": 8660,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/water.517d6671.svg",
+      "hash": "517d6671",
+      "size": 1054,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/mulberry/writing.b58e8a3e.svg",
+      "hash": "b58e8a3e",
+      "size": 6094,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/alarm_clock.c7bf40ab.svg",
+      "hash": "c7bf40ab",
+      "size": 913,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/angry.d8ff9282.svg",
+      "hash": "d8ff9282",
+      "size": 748,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/book.8de51256.svg",
+      "hash": "8de51256",
+      "size": 904,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/boy.bc8150ea.svg",
+      "hash": "bc8150ea",
+      "size": 943,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/calm.bbb9444f.svg",
+      "hash": "bbb9444f",
+      "size": 576,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/carrot.be987d20.svg",
+      "hash": "be987d20",
+      "size": 2115,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/choose.742961b2.svg",
+      "hash": "742961b2",
+      "size": 1321,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/clean_up.a718de97.svg",
+      "hash": "a718de97",
+      "size": 1928,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/deep_breath.a223c9dd.svg",
+      "hash": "a223c9dd",
+      "size": 2075,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/excited.6dbcc77f.svg",
+      "hash": "6dbcc77f",
+      "size": 1508,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/finished.948820d2.svg",
+      "hash": "948820d2",
+      "size": 912,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/football.57ddf7c2.svg",
+      "hash": "57ddf7c2",
+      "size": 6439,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/friend.335b213a.svg",
+      "hash": "335b213a",
+      "size": 1979,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/girl.ed952045.svg",
+      "hash": "ed952045",
+      "size": 1337,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/go.a337cf3e.svg",
+      "hash": "a337cf3e",
+      "size": 212,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/grapes.a15fe614.svg",
+      "hash": "a15fe614",
+      "size": 2986,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/hairdresser.e6569a1a.svg",
+      "hash": "e6569a1a",
+      "size": 1902,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/happy.61439cd8.svg",
+      "hash": "61439cd8",
+      "size": 1053,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/hospital.a457dd4f.svg",
+      "hash": "a457dd4f",
+      "size": 778,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/hurt.eabc3626.svg",
+      "hash": "eabc3626",
+      "size": 1552,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/library.7da6bc54.svg",
+      "hash": "7da6bc54",
+      "size": 1721,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/love.bd87268f.svg",
+      "hash": "bd87268f",
+      "size": 625,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/morning.95b474a4.svg",
+      "hash": "95b474a4",
+      "size": 996,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/nap.6dbadad8.svg",
+      "hash": "6dbadad8",
+      "size": 898,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/no.6e0b68ec.svg",
+      "hash": "6e0b68ec",
+      "size": 1174,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/park.b7188512.svg",
+      "hash": "b7188512",
+      "size": 1316,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/party.c2a65f6b.svg",
+      "hash": "c2a65f6b",
+      "size": 1328,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/sad.c706e981.svg",
+      "hash": "c706e981",
+      "size": 1043,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/scared.ff55002b.svg",
+      "hash": "ff55002b",
+      "size": 1093,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/scooter.68963bc4.svg",
+      "hash": "68963bc4",
+      "size": 2105,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/sick.392c9dc3.svg",
+      "hash": "392c9dc3",
+      "size": 1827,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/stop.f42b0434.svg",
+      "hash": "f42b0434",
+      "size": 2306,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/strawberry.f8f20673.svg",
+      "hash": "f8f20673",
+      "size": 2419,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/supermarket.c7a2db85.svg",
+      "hash": "c7a2db85",
+      "size": 1217,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/surprise.4964b86e.svg",
+      "hash": "4964b86e",
+      "size": 1655,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/surprised.ced8ebe8.svg",
+      "hash": "ced8ebe8",
+      "size": 592,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/tablet.5ab824d8.svg",
+      "hash": "5ab824d8",
+      "size": 763,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/teacher.9edda382.svg",
+      "hash": "9edda382",
+      "size": 3017,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/tired.bd1bdf28.svg",
+      "hash": "bd1bdf28",
+      "size": 2469,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/video_game.fb4c4a6a.svg",
+      "hash": "fb4c4a6a",
+      "size": 1797,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/well_done.e42fc982.svg",
+      "hash": "e42fc982",
+      "size": 2206,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/worried.09ecf302.svg",
+      "hash": "09ecf302",
+      "size": 658,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/assets/symbols/openmoji/yes.00a8bfa6.svg",
+      "hash": "00a8bfa6",
+      "size": 1147,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/fonts/MaterialIcons-Regular.7aac64db.otf",
+      "hash": "7aac64db",
+      "size": 10492,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/fonts/fallback/Roboto-Regular.79e85140.ttf",
+      "hash": "79e85140",
+      "size": 171676,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/packages/material_ui/shaders/ink_sparkle.2dca5ab9.frag",
+      "hash": "2dca5ab9",
+      "size": 8890,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/packages/wakelock_plus/assets/no_sleep.726c644c.js",
+      "hash": "726c644c",
+      "size": 13669,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/shaders/ink_sparkle.2dca5ab9.frag",
+      "hash": "2dca5ab9",
+      "size": 8890,
+      "urlHashed": true
+    },
+    {
+      "url": "assets/shaders/stretch_effect.ab412f07.frag",
+      "hash": "ab412f07",
+      "size": 6737,
+      "urlHashed": true
+    },
+    {
+      "url": "canvaskit/canvaskit.js",
+      "hash": "4719b51c",
+      "size": 87031,
+      "urlHashed": false
+    },
+    {
+      "url": "canvaskit/canvaskit.wasm",
+      "hash": "f3c2ff16",
+      "size": 7315452,
+      "urlHashed": false
+    },
+    {
+      "url": "canvaskit/chromium/canvaskit.js",
+      "hash": "b836e30a",
+      "size": 86270,
+      "urlHashed": false
+    },
+    {
+      "url": "canvaskit/chromium/canvaskit.wasm",
+      "hash": "e269e717",
+      "size": 5463539,
+      "urlHashed": false
+    },
+    {
+      "url": "canvaskit/skwasm.js",
+      "hash": "373ad56a",
+      "size": 63858,
+      "urlHashed": false
+    },
+    {
+      "url": "canvaskit/skwasm.wasm",
+      "hash": "8cc8a3a9",
+      "size": 3612036,
+      "urlHashed": false
+    },
+    {
+      "url": "canvaskit/skwasm_heavy.js",
+      "hash": "0c22eeac",
+      "size": 63971,
+      "urlHashed": false
+    },
+    {
+      "url": "canvaskit/skwasm_heavy.wasm",
+      "hash": "08274767",
+      "size": 5232173,
+      "urlHashed": false
+    },
+    {
+      "url": "canvaskit/webparagraph/canvaskit.js",
+      "hash": "6a95972e",
+      "size": 76114,
+      "urlHashed": false
+    },
+    {
+      "url": "canvaskit/webparagraph/canvaskit.wasm",
+      "hash": "01f0337c",
+      "size": 3753480,
+      "urlHashed": false
+    },
+    {
+      "url": "canvaskit/wimp.js",
+      "hash": "e4bc298d",
+      "size": 59546,
+      "urlHashed": false
+    },
+    {
+      "url": "canvaskit/wimp.wasm",
+      "hash": "f2850c85",
+      "size": 3604253,
+      "urlHashed": false
+    },
+    {
+      "url": "drift_worker.js",
+      "hash": "48c950cd",
+      "size": 363283,
+      "urlHashed": false
+    },
+    {
+      "url": "favicon.png",
+      "hash": "871690a0",
+      "size": 1891,
+      "urlHashed": false
+    },
+    {
+      "url": "flutter.js",
+      "hash": "d2e7708f",
+      "size": 13169,
+      "urlHashed": false
+    },
+    {
+      "url": "flutter_bootstrap.js",
+      "hash": "c306bcbf",
+      "size": 14655,
+      "urlHashed": false
+    },
+    {
+      "url": "icons/Icon-192.png",
+      "hash": "ce8c241f",
+      "size": 6271,
+      "urlHashed": false
+    },
+    {
+      "url": "icons/Icon-512.png",
+      "hash": "b66cac46",
+      "size": 19650,
+      "urlHashed": false
+    },
+    {
+      "url": "icons/Icon-maskable-192.png",
+      "hash": "4b1a67b7",
+      "size": 3314,
+      "urlHashed": false
+    },
+    {
+      "url": "icons/Icon-maskable-512.png",
+      "hash": "3c4ed0e0",
+      "size": 11334,
+      "urlHashed": false
+    },
+    {
+      "url": "icons/apple-touch-icon.png",
+      "hash": "5f6fb8e6",
+      "size": 5818,
+      "urlHashed": false
+    },
+    {
+      "url": "index.html",
+      "hash": "6fed8768",
+      "size": 3786,
+      "urlHashed": false
+    },
+    {
+      "url": "main.dart.d89e0582.js",
+      "hash": "d89e0582",
+      "size": 3936064,
+      "urlHashed": true
+    },
+    {
+      "url": "manifest.json",
+      "hash": "22b2142d",
+      "size": 901,
+      "urlHashed": false
+    },
+    {
+      "url": "sqlite3.wasm",
+      "hash": "e7451780",
+      "size": 758836,
+      "urlHashed": false
+    },
+    {
+      "url": "sw.js",
+      "hash": "2a4da49d",
+      "size": 4141,
+      "urlHashed": false
+    },
+    {
+      "url": "version.json",
+      "hash": "bc42e688",
+      "size": 86,
+      "urlHashed": false
+    }
+  ]
+}

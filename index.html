@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    The base href is replaced by `flutter build web --base-href`. GitHub Pages
+    serves the app from /Daysteps/, local builds from /.
+  -->
+  <base href="/Daysteps/">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Daysteps: free, offline picture schedules, first-then boards and visual timers for autistic children. An adult edits the schedule; the child's device just shows it.">
+  <meta name="theme-color" content="#1D6F7A">
+  <meta name="color-scheme" content="light">
+
+  <!-- Installable web app -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Daysteps">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Link previews -->
+  <meta property="og:title" content="Daysteps — picture schedules">
+  <meta property="og:description" content="Offline picture schedules, first-then boards and visual timers. No account, no ads.">
+  <meta property="og:image" content="icons/Icon-512.png">
+
+  <title>Daysteps</title>
+
+  <style>
+    html, body { margin: 0; height: 100%; background: #FFF8EE; }
+    #splash {
+      position: fixed; inset: 0; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; gap: 20px;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: #21323A; transition: opacity .35s ease;
+    }
+    #splash img { width: 112px; height: 112px; animation: rise 1.6s ease-in-out infinite; }
+    #splash p { margin: 0; font-size: 18px; letter-spacing: .02em; opacity: .75; }
+    #splash.done { opacity: 0; pointer-events: none; }
+    @keyframes rise { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+    @media (prefers-reduced-motion: reduce) { #splash img { animation: none; } }
+  </style>
+</head>
+<body>
+  <div id="splash" aria-live="polite">
+    <img src="icons/Icon-192.png" alt="">
+    <p>Getting your day ready…</p>
+  </div>
+  <noscript>Daysteps needs JavaScript to run.</noscript>
+
+  <script>
+    // Hide the splash screen once Flutter has drawn its first frame.
+    window.addEventListener('flutter-first-frame', function () {
+      var splash = document.getElementById('splash');
+      if (splash) {
+        splash.classList.add('done');
+        setTimeout(function () { splash.remove(); }, 400);
+      }
+      cacheLoadedFiles();
+    });
+
+    // Offline support: cache the app after the first visit (see sw.js).
+    var offline = 'serviceWorker' in navigator &&
+      (location.protocol === 'https:' || location.hostname === 'localhost');
+    if (offline) {
+      navigator.serviceWorker.register('sw.js').catch(function (e) {
+        console.warn('Offline support unavailable:', e);
+      });
+    }
+
+    // Tell the service worker which files this browser loaded (for example
+    // the CanvasKit build it picked), so they're available offline too.
+    function cacheLoadedFiles() {
+      if (!offline) return;
+      navigator.serviceWorker.ready.then(function (registration) {
+        var urls = performance.getEntriesByType('resource')
+          .map(function (entry) { return entry.name; })
+          .filter(function (url) { return url.indexOf(location.origin) === 0; });
+        if (registration.active) {
+          registration.active.postMessage({ type: 'cache-urls', urls: urls });
+        }
+      });
+    }
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
