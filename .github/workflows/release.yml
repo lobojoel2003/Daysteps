@@ -1,53 +1,73 @@
 name: Release
 
-# Push a tag like v1.2.3 (matching `version:` in pubspec.yaml) to publish a
-# GitHub Release with Android APKs, an App Bundle and the web app, and to
-# deploy the web app to GitHub Pages.
+# Publishes a GitHub Release with Android APKs, an App Bundle and the web
+# app, and deploys the web app to GitHub Pages. Two ways to start it:
+#
+# - push a tag like v1.2.3 that matches `version:` in pubspec.yaml, or
+# - run it from the Actions tab ("Run workflow" on main). It releases the
+#   version in pubspec.yaml and creates the tag on that commit.
 on:
   push:
     tags: ['v[0-9]+.[0-9]+.[0-9]+*']
   workflow_dispatch:
     inputs:
       tag:
-        description: Existing tag to build and publish, e.g. v1.0.0
-        required: true
+        description: Tag to release. Leave empty to use v + the version in pubspec.yaml.
+        required: false
+        default: ''
 
 permissions:
   contents: read
 
 concurrency:
-  group: release-${{ inputs.tag || github.ref_name }}
+  group: release-${{ github.ref }}
   cancel-in-progress: false
 
 env:
   FLUTTER_VERSION: '3.50.0'
-  TAG: ${{ inputs.tag || github.ref_name }}
 
 jobs:
   prepare:
     name: Check version
     runs-on: ubuntu-latest
     outputs:
+      tag: ${{ steps.version.outputs.tag }}
+      sha: ${{ steps.version.outputs.sha }}
       version: ${{ steps.version.outputs.version }}
       build: ${{ steps.version.outputs.build }}
       prerelease: ${{ steps.version.outputs.prerelease }}
     steps:
       - uses: actions/checkout@v7
-        with:
-          ref: ${{ env.TAG }}
 
       - name: Tag must match pubspec.yaml
         id: version
+        env:
+          INPUT_TAG: ${{ inputs.tag }}
         run: |
           pubspec=$(sed -n 's/^version: *//p' pubspec.yaml | tr -d '[:space:]')
           name=${pubspec%%+*}
           build=${pubspec##*+}
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then
+            TAG="$GITHUB_REF_NAME"
+          else
+            TAG="${INPUT_TAG:-v$name}"
+            # A manual run may re-publish an existing tag, but never move it.
+            if git ls-remote --exit-code --tags origin "refs/tags/$TAG" >/dev/null; then
+              git fetch -q --depth=1 origin "refs/tags/$TAG:refs/tags/$TAG"
+              if [ "$(git rev-parse "$TAG^{commit}")" != "$GITHUB_SHA" ]; then
+                echo "::error::Tag $TAG already exists on another commit. Bump the version first."
+                exit 1
+              fi
+            fi
+          fi
           if [ "v$name" != "$TAG" ]; then
             echo "::error::Tag $TAG does not match pubspec.yaml version $pubspec (expected v$name)."
             exit 1
           fi
           prerelease=false
           case "$name" in *-*) prerelease=true ;; esac
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "sha=$GITHUB_SHA" >> "$GITHUB_OUTPUT"
           echo "version=$name" >> "$GITHUB_OUTPUT"
           echo "build=$build" >> "$GITHUB_OUTPUT"
           echo "prerelease=$prerelease" >> "$GITHUB_OUTPUT"
@@ -80,7 +100,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
-          ref: ${{ env.TAG }}
+          ref: ${{ needs.prepare.outputs.sha }}
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: ${{ env.FLUTTER_VERSION }}
@@ -101,7 +121,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
-          ref: ${{ env.TAG }}
+          ref: ${{ needs.prepare.outputs.sha }}
 
       - uses: actions/setup-java@v6
         with:
@@ -172,7 +192,7 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
-          ref: ${{ env.TAG }}
+          ref: ${{ needs.prepare.outputs.sha }}
 
       - uses: subosito/flutter-action@v2
         with:
@@ -210,6 +230,7 @@ jobs:
     permissions:
       contents: write
     env:
+      TAG: ${{ needs.prepare.outputs.tag }}
       VERSION: ${{ needs.prepare.outputs.version }}
       BUILD: ${{ needs.prepare.outputs.build }}
     steps:
@@ -259,6 +280,8 @@ jobs:
         uses: softprops/action-gh-release@v3
         with:
           tag_name: ${{ env.TAG }}
+          # Creates the tag on this commit when the release was started by hand.
+          target_commitish: ${{ needs.prepare.outputs.sha }}
           name: Daysteps ${{ env.VERSION }}
           body_path: release-notes.md
           prerelease: ${{ needs.prepare.outputs.prerelease == 'true' }}
@@ -282,6 +305,7 @@ jobs:
       - name: Push to the gh-pages branch
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: ${{ needs.prepare.outputs.tag }}
         run: |
           cd site
           touch .nojekyll

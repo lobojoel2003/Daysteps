@@ -342,7 +342,11 @@ git tag -a v1.1.0 -m "Daysteps 1.1.0"
 git push origin main --follow-tags
 ```
 
-The tag starts the **Release** workflow, which checks that the tag matches
+Prefer not to push tags? After pushing the version bump, open **Actions →
+Release → Run workflow** on `main`: it releases the version in `pubspec.yaml`
+and creates the `vX.Y.Z` tag on that commit.
+
+Either way the **Release** workflow checks that the tag matches
 `pubspec.yaml`, runs the tests, builds the APKs, App Bundle and web app,
 publishes a GitHub Release with checksums and the changelog notes, and deploys
 the web app. Tags with a suffix such as `v1.2.0-beta.1` become pre-releases.
@@ -379,7 +383,7 @@ git-ignored).
 | Workflow | Runs on | What it does |
 |---|---|---|
 | [CI](.github/workflows/ci.yml) | every push and every pull request | format check, generated-code check, `flutter analyze --fatal-infos`, tests with coverage, then builds an Android APK and the web app as downloadable artifacts |
-| [Release](.github/workflows/release.yml) | tags `v*.*.*` | version check, tests, universal and per-ABI APKs, App Bundle (when signed), web zip, `SHA256SUMS.txt`, GitHub Release with notes from the changelog, web app deployed to the `gh-pages` branch |
+| [Release](.github/workflows/release.yml) | tags `v*.*.*`, or *Run workflow* on `main` | version check, tests, universal and per-ABI APKs, App Bundle (when signed), web zip, `SHA256SUMS.txt`, GitHub Release with notes from the changelog, web app deployed to the `gh-pages` branch |
 | [Dependabot](.github/dependabot.yml) | weekly / monthly | keeps Flutter packages and GitHub Actions up to date |
 
 The web app is served by GitHub Pages from the `gh-pages` branch (**Settings →
